@@ -37,6 +37,12 @@ img {
   display: block;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1158px;
+  padding: 0 15px;
+}
+
 .logo-header {
   display: block;
 }
@@ -84,12 +90,6 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-}
-
-.container {
-  margin: 0 auto;
-  width: 1158px;
-  padding: 0 15px;
 }
 
 /* header-logo */
