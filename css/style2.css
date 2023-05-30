@@ -358,7 +358,7 @@ body {
   bottom: -1px;
   left: 0;
 }
-
+/*
 .modal-open-btn {
   display: block;
   border: none;
@@ -385,7 +385,7 @@ body {
   background-color: var(--press-color);
   box-shadow: 0 4px rgba(0, 0, 0, 0.15);
 }
-
+  */
 /* section-mainpage-2*/
 
 .visually-hidden {
