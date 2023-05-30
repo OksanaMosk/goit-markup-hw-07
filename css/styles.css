@@ -240,15 +240,14 @@ body {
     max-height: 432px;
     top: 0;
     left: 0;
-    margin: 0 auto;
-    padding: 112px 0 72px;
+    margin: 70px auto;
     text-align: center;
-  }
+    padding: 112px 0 168px;
 
   .hero-title {
     margin: auto;
     max-width: 320px;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     color: var(--secondary-color);
     font-weight: 700;
     font-size: 36px;
