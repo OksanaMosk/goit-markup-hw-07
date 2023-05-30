@@ -137,93 +137,127 @@ body {
     cursor: pointer;
     transition: background-color var(--transition-dur-funk);
   }
-}
 
-.icon-close {
-  fill: var(--main-color);
-}
+  .icon-close {
+    fill: var(--main-color);
+  }
 
-.page-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 1);
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
-    0 1px 6px rgba(46, 47, 66, 0.08);
-}
+  .page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+      0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
+  }
 
-.logo {
-  color: var(--active-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 1.17;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+  .logo {
+    color: var(--active-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 
-.logo-dark {
-  color: var(--main-color);
-}
+  .logo-dark {
+    color: var(--main-color);
+  }
 
-.logo-light {
-  color: var(--light-color);
-}
+  .logo-light {
+    color: var(--light-color);
+  }
 
-.mobile-menu-container-addresses {
-  padding-top: 244px;
-}
+  .mobile-menu-container-addresses {
+    padding-top: 244px;
+  }
 
-.mobile-menu-phone-item {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--active-color);
-  padding-top: 244px;
-}
+  .mobile-menu-phone-item {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--active-color);
+    padding-top: 244px;
+  }
 
-.mobile-menu-email {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+  .mobile-menu-email {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-.mobile-menu-email-item {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-}
+  .mobile-menu-email-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+  }
 
-.modal-footer-list {
-  display: flex;
-  gap: 56px;
-}
+  .modal-footer-list {
+    display: flex;
+    gap: 56px;
+  }
 
-.mobile-menu-close-btn:focus {
-  background-color: var(--press-color);
-  fill: var(--secondary-color);
-}
+  .mobile-menu-close-btn:focus {
+    background-color: var(--press-color);
+    fill: var(--secondary-color);
+  }
 
-.social-footer {
-  display: flex;
-  background-color: var(--active-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  transition: background-color var(--transition-dur-funk);
-}
+  .social-footer {
+    display: flex;
+    background-color: var(--active-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color var(--transition-dur-funk);
+  }
 
-.social-footer:focus {
-  background-color: #31d0aa;
-}
+  .social-footer:focus {
+    background-color: #31d0aa;
+  }
 
-.social-icon {
-  fill: var(--light-color);
+  .social-icon {
+    fill: var(--light-color);
+  }
+  .hero {
+    display: flex;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Hero-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 428px;
+    max-height: 432px;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 112px 0 72px;
+    text-align: center;
+  }
+
+  .hero-title {
+    margin: auto;
+    max-width: 320px;
+    margin-bottom: 48px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .hero {
+    background-color: var(--main-color);
+  }
 }
