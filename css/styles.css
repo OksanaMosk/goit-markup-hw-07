@@ -243,7 +243,7 @@ body {
     margin: 70px auto;
     text-align: center;
     padding: 112px 0 168px;
-
+  }
   .hero-title {
     margin: auto;
     max-width: 320px;
@@ -284,5 +284,25 @@ body {
     color: var(--secondary-color);
     background-color: var(--press-color);
     box-shadow: 0 4px rgba(0, 0, 0, 0.15);
+  }
+  .scills {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .scills-icon {
+    display: none;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
