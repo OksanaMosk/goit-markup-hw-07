@@ -240,7 +240,7 @@ body {
     max-height: 432px;
     top: 0;
     left: 0;
-    margin: 70px auto;
+    margin: 70px auto 0;
     text-align: center;
     padding: 112px 0 168px;
   }
@@ -287,8 +287,9 @@ body {
   }
   .scills {
     display: flex;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .scills-icon {
     display: none;
@@ -304,5 +305,32 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+  .scills-list {
+    display: none;
+  }
+
+  .first-scill {
+    margin-bottom: 72px;
+  }
+
+  .scills-item {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 8px;
+  }
+
+  .scills-item-about {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    max-width: 396px;
+    justify-content: center;
   }
 }
