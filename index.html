@@ -240,32 +240,76 @@
           <ul class="list doing-list">
             <li class="first-doing">
               <h3 hidden>desktop</h3>
-              <img
-                src="./images/desktop.jpg"
-                alt="desktop"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing/doing-tab.webp    1x,
+                    ./images/doing/doing-tab@2x.webp 2x
+                  "
+                  media="(min-width:1158)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/doing/doing-tab.jpg    1x,
+                    ./images/doing/doing-tab@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+                <img
+                  src="./images/desktop.jpg"
+                  alt="desktop"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
-
             <li class="first-doing">
               <h3 hidden>mobile</h3>
-              <img
-                src="./images/mobile.jpg"
-                alt="mobile"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing/doing-mob.webp    1x,
+                    ./images/doing/doing-mob@2x.webp 2x
+                  "
+                  media="(min-width:1158)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/doing/doing-mob.jpg    1x,
+                    ./images/doing/doing-mob@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)" />
+                <img
+                  src="./images/mobile.jpg"
+                  alt="mobile"
+                  width="360"
+                  height="300"
+              /></picture>
             </li>
 
             <li class="first-doing">
               <h3 hidden>synchronization</h3>
-              <img
-                src="./images/synchronization.jpg"
-                alt="synchronization"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing/doing-desk.webp    1x,
+                    ./images/doing/doing-desk@2x.webp 2x
+                  "
+                  media="(min-width:1158)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/doing/doing-desk.jpg    1x,
+                    ./images/doing/doing-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)" />
+                <img
+                  src="./images/synchronization.jpg"
+                  alt="synchronization"
+                  width="360"
+                  height="300"
+              /></picture>
             </li>
           </ul>
         </div>
@@ -275,13 +319,60 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="list team-list-top">
             <li class="team-list">
-              <img
-                class="team-item-img"
-                src="./images/team/mark-guerrero.jpg"
-                alt="Mark Guerrero"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-desktop/guerrero-desk.webp    1x,
+                    ./images/team/team-desktop/guerrero-desk@2x.webp 2x
+                  "
+                  media="(min-width:1158)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-desktop/guerrero-desk.jpg    1x,
+                    ./images/team/team-desktop/guerrero-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tablet/guerrero-tab.webp    1x,
+                    ./images/team/team-tablet/guerrero-tab@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tablet/guerrero-tab.jpg    1x,
+                    ./images/team/team-tablet/guerrero-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-mobile/guerrero.webp    1x,
+                    ./images/team/team-mobile/guerrero@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-mobile/guerrero.jpg     1x,
+                    ./images/team/team-mobile/guerrero.@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-item-img"
+                  src="./images/team/team-desktop/guerrero-desk.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="team-border every-team-border">
                 <h3 class="team-item">Mark Guerrero</h3>
                 <p class="item-about">Product Designer</p>
@@ -338,13 +429,53 @@
               </div>
             </li>
             <li class="team-list">
-              <img
-                class="team-item-img"
-                src="./images/team/tom-ford.jpg"
-                alt="Tom Ford"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-desktop/ford-desk.webp    1x,
+                    ./images/team/team-desktop/ford-desk@2x.webp 2x
+                  "
+                  media="(min-width:1158)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/team-desktop/ford-desk.jpg    1x,
+                    ./images/team/team-desktop/ford-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)" />
+                <source
+                  srcset="
+                    ./images/team/team-tablet/ford-tab.webp    1x,
+                    ./images/team/team-tablet/ford-tab@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/team-tablet/ford-tab.jpg    1x,
+                    ./images/team/team-tablet/ford-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/team/team-mobile/ford.webp    1x,
+                    ./images/team/team-mobile/ford@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/team-mobile/ford.jpg     1x,
+                    ./images/team/team-mobile/ford.@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="team-item-img"
+                  src="./images/team/tom-ford.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                  height="260"
+              /></picture>
               <div class="team-border every-team-border">
                 <h3 class="team-item">Tom Ford</h3>
                 <p class="item-about">Frontend Developer</p>
@@ -401,13 +532,54 @@
               </div>
             </li>
             <li class="team-list">
-              <img
-                class="team-item-img"
-                src="./images/team/camila-garcia.jpg"
-                alt="Camila Garcia"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-desktop/garcia-desk.webp    1x,
+                    ./images/team/team-desktop/garcia-desk@2x.webp 2x
+                  "
+                  media="(min-width:1158)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/team-desktop/garcia-desk.jpg    1x,
+                    ./images/team/team-desktop/garcia-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)" />
+                <source
+                  srcset="
+                    ./images/team/team-tablet/garcia-tab.webp    1x,
+                    ./images/team/team-tablet/garcia-tab@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/team-tablet/garcia-tab.jpg    1x,
+                    ./images/team/team-tablet/garcia-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/team/team-mobile/garcia.webp    1x,
+                    ./images/team/team-mobile/garcia@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/team-mobile/garcia.jpg     1x,
+                    ./images/team/team-mobile/garcia.@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+
+                <img
+                  class="team-item-img"
+                  src="./images/team/camila-garcia.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                  height="260"
+              /></picture>
               <div class="team-border every-team-border">
                 <h3 class="team-item">Camila Garcia</h3>
                 <p class="item-about">Marketing</p>
@@ -464,13 +636,55 @@
               </div>
             </li>
             <li class="team-list">
-              <img
-                class="team-item-img"
-                src="./images/team/daniel-wilson.jpg"
-                alt="Daniel Wilson"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-desktop/wilson-desk.webp    1x,
+                    1x,
+                    ./images/team/team-desktop/wilson-desk@2x.webp 2x
+                  "
+                  media="(min-width:1158)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/team-desktop/wilson-desk.jpg    1x,
+                    ./images/team/team-desktop/wilson-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)" />
+                <source
+                  srcset="
+                    ./images/team/team-tablet/wilson-tab.webp    1x,
+                    1x,
+                    ./images/team/team-tablet/wilson-tab@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/team-tablet/wilson-tab.jpg    1x,
+                    ./images/team/team-tablet/wilson-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/team/team-mobile/wilson.webp    1x,
+                    ./images/team/team-mobile/wilson@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/team-mobile/wilson.jpg     1x,
+                    ./images/team/team-mobile/wilson.@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="team-item-img"
+                  src="./images/team/daniel-wilson.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                  height="260"
+              /></picture>
               <div class="team-border every-team-border">
                 <h3 class="team-item">Daniel Wilson</h3>
                 <p class="item-about">UI Designer</p>
