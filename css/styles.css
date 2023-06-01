@@ -54,19 +54,65 @@ body {
   padding-top: 24px;
   padding-bottom: 22px;
 }
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--transition-dur-funk),
+    visibility var(--transition-dur-funk);
+}
+@media screen and (min-width: 319px) {
+  .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscribe-list {
+    display: flex;
+    margin-left: auto;
+    margin: auto;
+    width: 288px;
+    height: 40px;
+  }
+  .menu {
+    display: none;
+  }
+  .addresses {
+    display: none;
+  }
+  .modal-window {
+    position: absolute;
+    width: 288px;
+    min-height: 584px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform var(--transition-dur-funk);
+    padding: 72px 16px 24px 16px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 428px;
     margin-left: auto;
     margin-right: auto;
   }
-
-  .menu {
-    display: none;
-  }
-  .addresses {
-    display: none;
+  .subscribe-list {
+    width: 398px;
   }
 }
 .page-header-container {
@@ -231,6 +277,7 @@ body {
 }
 .hero {
   display: flex;
+  justify-content: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -241,8 +288,6 @@ body {
   background-position: center;
   max-width: 428px;
   max-height: 432px;
-  top: 0;
-  left: 0;
   margin: 70px auto 0;
   text-align: center;
   padding: 112px 0 168px;
@@ -303,6 +348,8 @@ body {
 }
 .scills {
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: center;
   padding-top: 96px;
   padding-bottom: 18px;
@@ -354,6 +401,9 @@ body {
 }
 .team-container {
   display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: var(--light-color);
@@ -501,6 +551,7 @@ body {
 .footer {
   max-width: 428px;
   display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 96px;
@@ -516,13 +567,15 @@ body {
   padding-bottom: 16px;
 }
 .footer-about {
+  text-align: start;
+  margin-left: auto;
+  margin-right: auto;
   width: 268px;
   font-weight: 400px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
-  margin-left: 64px;
 }
 .social-media-footer {
   margin-top: 72px;
@@ -567,6 +620,7 @@ body {
 }
 
 .subscribe-email {
+  display: flex;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -596,11 +650,13 @@ body {
 }
 
 .subscribe-button {
-  margin-top: 16px;
-  margin-left: 132px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1335,6 +1391,7 @@ body {
   }
   .subscribe-list {
     display: flex;
+    width: 264px;
   }
 
   .subscribe-title {
