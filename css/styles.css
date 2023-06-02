@@ -79,9 +79,10 @@ body {
 
 .mobile-menu-container {
   position: relative;
-  padding-left: 40px;
   padding-top: 80px;
   padding-bottom: 40px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .mobile-menu-container-link {
@@ -188,7 +189,7 @@ body {
 
 .mobile-menu-phone-item {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -866,8 +867,15 @@ body {
   .modal-window {
     width: 392px;
   }
-}
 
+  .mobile-menu-container {
+    padding-left: 40px;
+  }
+
+  .mobile-menu-phone-item {
+    font-size: 36px;
+  }
+}
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
