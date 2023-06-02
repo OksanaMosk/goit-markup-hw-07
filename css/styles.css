@@ -380,6 +380,7 @@ body {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   text-align: center;
   color: var(--main-color);
   margin-bottom: 8px;
@@ -595,14 +596,6 @@ body {
   gap: 16px;
 }
 
-.social-footer {
-  background-color: var(--active-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  transition: background-color var(--transition-dur-funk);
-}
-
 .social-footer:hover,
 .social-footer:focus {
   background-color: #31d0aa;
@@ -700,18 +693,8 @@ body {
 }
 
 .modal-window {
-  position: absolute;
   width: 392px;
   min-height: 584px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform var(--transition-dur-funk);
-  padding: 72px 16px 24px 16px;
 }
 
 .window-close-btn {
@@ -925,22 +908,6 @@ body {
   }
 
   /* Header */
-  .page-header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .page-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
-      0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
-  }
 
   .page-navigation {
     display: flex;
@@ -959,22 +926,7 @@ body {
   }
 
   .logo {
-    color: var(--active-color);
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height: 1.17;
-    font-weight: 800;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     margin-right: 120px;
-  }
-
-  .logo-dark {
-    color: var(--main-color);
-  }
-
-  .logo-light {
-    color: var(--light-color);
   }
 
   .menu-item {
@@ -1015,22 +967,16 @@ body {
 
   /* Hero */
   .hero {
-    display: flex;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero/hero-tablet.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     max-width: 768px;
     max-height: 436px;
     top: 0;
     left: 0;
     margin: 72px auto 0;
-    text-align: center;
-    padding: 112px 0 168px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -1149,21 +1095,9 @@ body {
 
   .scills-item {
     text-align: start;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--main-color);
-    margin-bottom: 8px;
   }
 
   .scills-item-about {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
     width: 356px;
     padding: 0 1px;
   }
@@ -1172,21 +1106,6 @@ body {
   .team-container {
     padding-left: auto;
     padding-right: auto;
-    padding-top: 96px;
-    padding-bottom: 96px;
-    background-color: var(--light-color);
-  }
-
-  .team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--main-color);
-    text-align: center;
-    margin-bottom: 72px;
   }
 
   .team-list-top {
@@ -1195,50 +1114,13 @@ body {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    background-color: var(--light-color);
   }
 
   .team-list {
-    background-color: var(--secondary-color);
     flex-basis: calc((100% - 24px) / 2);
     max-width: 264px;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   }
 
-  .team-item {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--main-color);
-    text-align: center;
-    margin-bottom: 8px;
-  }
-
-  .item-about {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-    text-align: center;
-    margin-bottom: 8px;
-  }
-
-  .team-border {
-    padding: 32px 0;
-  }
-
-  .social {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-  }
-
-  .social-list,
   .social-footer {
     display: flex;
     background-color: var(--active-color);
@@ -1264,18 +1146,6 @@ body {
     padding-top: 96px;
   }
 
-  .customers-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--main-color);
-    text-align: center;
-    margin-bottom: 72px;
-  }
-
   .customers-list {
     display: flex;
     flex-wrap: wrap;
@@ -1287,36 +1157,8 @@ body {
   .every-customer-item {
     flex-basis: calc((100% - 48px) / 3);
     max-width: 168px;
-    height: 88px;
   }
 
-  .customers-item {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--icon-color);
-    transition: border-color var(--transition-dur-funk),
-      color var(--transition-dur-funk);
-  }
-
-  .customers-icon {
-    fill: currentColor;
-  }
-
-  .customers-item:hover,
-  .customers-item:focus {
-    border: 1px solid var(--press-color);
-  }
-
-  .customers-item:hover,
-  .customers-item:focus {
-    color: var(--press-color);
-  }
   /* footer */
   .footer {
     max-width: 768px;
@@ -1358,29 +1200,6 @@ body {
   }
   .social-media {
     text-align: start;
-    margin-bottom: 16px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--secondary-color);
-  }
-  .social-footer-list {
-    justify-content: center;
-    display: flex;
-    gap: 16px;
-  }
-  .social-footer {
-    background-color: var(--active-color);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: background-color var(--transition-dur-funk);
-  }
-
-  .social-footer:hover,
-  .social-footer:focus {
-    background-color: #31d0aa;
   }
 
   .subscribe-form {
@@ -1499,12 +1318,8 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero/hero-desktop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     max-width: 1440px;
     margin: 72px auto 0;
-    text-align: center;
     padding: 112px 0 188px;
   }
 
@@ -1628,7 +1443,6 @@ body {
 
   .footer {
     min-width: 1158px;
-    display: flex;
     flex-wrap: nowrap;
     column-gap: 0;
     padding-top: 100px;
@@ -1643,7 +1457,6 @@ body {
   }
 
   .footer-link {
-    display: block;
     margin-right: 0;
     margin-left: 0;
     padding-bottom: 18px;
