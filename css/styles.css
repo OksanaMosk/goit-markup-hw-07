@@ -935,13 +935,16 @@ body {
   }
 
   .addresses {
-    display: contents;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 12px;
   }
   .addresses-nav {
-    align-items: center;
-  }
-  .link-email {
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 12px;
   }
 
   .modal-window {
@@ -1121,6 +1124,7 @@ body {
 
   .addresses-nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 40px;
   }
