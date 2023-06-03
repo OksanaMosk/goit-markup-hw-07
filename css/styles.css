@@ -86,7 +86,7 @@ body {
 }
 
 .mobile-menu-container-link {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .mobile-menu-container-item {
@@ -97,7 +97,9 @@ body {
   color: var(--main-color);
   transition: color var(--transition-dur-funk);
 }
-
+.studio {
+  color: var(--press-color);
+}
 .mobile-menu-container-item:focus {
   color: var(--press-color);
 }
@@ -121,6 +123,7 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -240,8 +243,6 @@ body {
 }
 
 .hero {
-  display: flex;
-  justify-content: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -251,10 +252,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   max-width: 428px;
-  max-height: 432px;
   margin: 70px auto 0;
   text-align: center;
-  padding: 112px 0 168px;
+  padding: 112px 0 112px;
 }
 .hero-title {
   margin: auto;
@@ -295,12 +295,8 @@ body {
   box-shadow: 0 4px rgba(0, 0, 0, 0.15);
 }
 .scills {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
   padding-top: 96px;
-  padding-bottom: 18px;
+  padding-bottom: 96px;
 }
 .scills-icon {
   display: none;
@@ -325,6 +321,10 @@ body {
   margin-bottom: 72px;
 }
 
+.first-scill:last-child {
+  margin-bottom: 0;
+}
+
 .scills-item {
   font-size: 36px;
   font-weight: 700;
@@ -342,7 +342,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  max-width: 396px;
   justify-content: center;
 }
 
@@ -350,14 +349,9 @@ body {
   display: none;
 }
 .team-container {
-  display: flex;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: var(--light-color);
-  justify-content: center;
 }
 
 .team-title {
@@ -498,14 +492,12 @@ body {
 }
 
 .footer {
-  max-width: 428px;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: var(--main-color);
+}
+.container-footer {
+  max-width: 428px;
 }
 
 .footer-link {
@@ -513,7 +505,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .footer-about {
   text-align: start;
@@ -552,7 +544,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .subscribe-email {
@@ -965,12 +957,12 @@ body {
       ),
       url("../images/hero/hero-tablet.jpg");
     max-width: 768px;
-    max-height: 436px;
-    top: 0;
-    left: 0;
     margin: 72px auto 0;
   }
 
+  .hero-title {
+    margin-bottom: 36px;
+  }
   .current-portfolio,
   .current-studio {
     position: relative;
@@ -1007,11 +999,6 @@ body {
 
   /* Sciils */
 
-  .scills {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-
   .scills-container {
     display: flex;
     flex-wrap: wrap;
@@ -1021,6 +1008,7 @@ body {
 
   .first-scill {
     flex-basis: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
 
   .scills-title {
@@ -1036,16 +1024,7 @@ body {
     text-align: start;
   }
 
-  .scills-item-about {
-    width: 356px;
-    padding: 0 1px;
-  }
-
   /* Our Team*/
-  .team-container {
-    padding-left: auto;
-    padding-right: auto;
-  }
 
   .team-list-top {
     column-gap: 24px;
@@ -1065,14 +1044,9 @@ body {
   }
 
   /* footer */
-  .footer {
-    max-width: 768px;
-  }
 
-  .footer-right {
-    margin-left: 92px;
-  }
   .container-footer {
+    max-width: 584px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -1082,11 +1056,8 @@ body {
 
   .footer-link {
     text-align: start;
-    margin-left: 92px;
   }
-  .footer-about {
-    margin-left: 92px;
-  }
+
   .social-media-footer {
     margin-top: 0;
     margin-bottom: 0;
@@ -1131,6 +1102,8 @@ body {
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .addresses-nav {
@@ -1162,7 +1135,7 @@ body {
       url("../images/hero/hero-desktop.jpg");
     max-width: 1440px;
     margin: 72px auto 0;
-    padding: 112px 0 188px;
+    padding: 188px 0 188px;
   }
 
   .hero-title {
@@ -1205,13 +1178,10 @@ body {
   }
   .scills-item-about {
     font-weight: 400;
-    width: 264px;
   }
   .doing-container {
-    display: contents;
-    width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    padding-bottom: 120px;
   }
 
   .doing-title {
@@ -1236,7 +1206,6 @@ body {
   }
 
   .team-container {
-    margin-top: 120px;
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -1269,7 +1238,6 @@ body {
   }
 
   .footer {
-    max-width: 1158px;
     flex-wrap: nowrap;
     column-gap: 0;
     padding-top: 100px;
@@ -1277,6 +1245,7 @@ body {
   }
 
   .container-footer {
+    max-width: 1158px;
     flex-wrap: nowrap;
     column-gap: 0;
   }
@@ -1284,7 +1253,6 @@ body {
   .footer-link {
     margin-right: 0;
     margin-left: 0;
-    padding-bottom: 18px;
   }
   .footer-about {
     margin-left: 0;
